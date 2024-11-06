@@ -21,7 +21,7 @@ Para la arquitectura definida se consideran los siguientes datos correspondiente
 |ca01vcentercbt.corp.popular.local
 
 |VvSphere vCenter Username
-|ntas\_openshiftcbt
+|_openshiftcbt
 
 |vSphere vCenter Datacenter
 |CORE_BANCARIO_CO
@@ -48,7 +48,7 @@ Se define a continuación las configuraciones de redes necesarias para el aprovi
 |Nombre | CIDR Bloque o Valor | Comentarios
 
 |VNet
-|10.32.75..0/24
+|10.32.75.0/24
 |Red definida para el direccionamiento de los nodos del cluster
 
 |Pod Network
@@ -143,10 +143,10 @@ a|
 |Metrics
 |Block
 |thin-csi
-a| 110Gi Total:
+a| 100Gi Total:
 
 * Prometheus: 2 x 40Gi=80Gi 
-* AlertManager: 3 x 10Gi=30Gi
+* AlertManager: 2 x 10Gi=20Gi
 
 |Logging
 |N/A
@@ -156,7 +156,7 @@ a| 110Gi Total:
 |Registry
 |Object
 |N/A
-|100+ Gi
+|300 Gi
 
 |Application
 |-
